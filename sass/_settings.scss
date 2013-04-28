@@ -15,8 +15,8 @@
 // $em-base: 16px;
 
 // We use these to control various global styles
-// $body-bg: #fff;
-// $body-font-color: #222;
+$body-bg: #ecf0f1;
+$body-font-color: #34495e;
 // $body-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 // $body-font-weight: normal;
 // $body-font-style: normal;
@@ -976,10 +976,10 @@
 //
 
 // Background color for the top bar
-// $topbar-bg: #111;
+$topbar-bg: #34495e;
 
 // Height and margin
-// $topbar-height: 45px;
+$topbar-height: 100px;
 // $topbar-margin-bottom: emCalc(30px);
 
 // Control Input height for top bar
@@ -987,10 +987,10 @@
 
 // Controlling the styles for the title in the top bar
 // $topbar-title-weight: bold;
-// $topbar-title-font-size: emCalc(17px);
+$topbar-title-font-size: emCalc(50px);
 
 // Set the link colors and styles for top-level nav
-// $topbar-link-color: #fff;
+$topbar-link-color: #ecf0f1;
 // $topbar-link-weight: bold;
 // $topbar-link-font-size: emCalc(13px);
 
