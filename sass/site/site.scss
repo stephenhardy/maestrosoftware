@@ -3,6 +3,7 @@
 */
 @import "global";
 
+@import "foundation/foundation-global";
 /*
 *	Custom site style
 */
@@ -15,6 +16,7 @@
 	background: url(../assets/images/bigstock-Abstract-Blue-Background-44606053.jpg) no-repeat center center #fff;
 	background-color: #D6EAF8;
 	color: #333333;
+	font-family: 'Lato', sans-serif;
 }
 
 #services {
@@ -27,4 +29,12 @@ footer {
 
 .icon-wrapper {
 	font-size: 60px;
+}
+
+section {
+	h3 {
+		padding: emCalc(16px);
+		font-style: italic;
+	}
+	
 }
