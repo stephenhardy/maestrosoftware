@@ -1,12 +1,30 @@
+/*
+*	Import site globals
+*/
+@import "global";
+
+/*
+*	Custom site style
+*/
+
 #main {
 /*	-moz-background-size: auto;
 	-webkit-background-size: auto;
 	background-size: auto;
 	background: url(http://www.bhmpics.com/wallpapers/london_skyline-1920x1080.jpg) no-repeat center center #fff;*/
-	background: url(/assets/images/bigstock-bench-on-green-grass-with-conc-18391673.jpg) no-repeat center center #fff;;
-	background-color: #3498db;
-	color: #FFFFFF;
+	background: url(../assets/images/bigstock-Abstract-Blue-Background-44606053.jpg) no-repeat center center #fff;
+	background-color: #D6EAF8;
+	color: #333333;
 }
 
 #services {
+}
+
+footer {
+	background-color: $topbar-bg;
+	color: #333333;
+}
+
+.icon-wrapper {
+	font-size: 60px;
 }
