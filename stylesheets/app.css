@@ -5582,18 +5582,18 @@ table tfoot tr td {
   font-family: 'Lato', sans-serif;
 }
 
-/* line 25, ../sass/site/site.scss */
+/* line 26, ../sass/site/site.scss */
 footer {
   background-color: #34495e;
   color: #333333;
 }
 
-/* line 30, ../sass/site/site.scss */
+/* line 31, ../sass/site/site.scss */
 .icon-wrapper {
   font-size: 60px;
 }
 
-/* line 35, ../sass/site/site.scss */
+/* line 36, ../sass/site/site.scss */
 section h3 {
   padding: 1em;
   font-style: italic;

@@ -1,9 +1,9 @@
 /*
 Syntax error: Undefined variable: "$topbar-bg".
-        on line 26 of /Users/stephenh/repos/maestrosoftware/sass/site/site.scss
+        on line 27 of /Users/stephenh/repos/maestrosoftware/sass/site/site.scss
 
 Backtrace:
-/Users/stephenh/repos/maestrosoftware/sass/site/site.scss:26
+/Users/stephenh/repos/maestrosoftware/sass/site/site.scss:27
 /Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/script/variable.rb:49:in `_perform'
 /Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/script/node.rb:40:in `perform'
 /Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:294:in `visit_prop'
@@ -83,4 +83,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined variable: \"$topbar-bg\".\A         on line 26 of /Users/stephenh/repos/maestrosoftware/sass/site/site.scss"; }
+  content: "Syntax error: Undefined variable: \"$topbar-bg\".\A         on line 27 of /Users/stephenh/repos/maestrosoftware/sass/site/site.scss"; }
