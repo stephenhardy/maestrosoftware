@@ -979,7 +979,7 @@ $header-font-family: "Lato", "Helvetica Neue", "Helvetica", Helvetica, Arial, sa
 $topbar-bg: #34495e;
 
 // Height and margin
-$topbar-height: 60px;
+$topbar-height: emCalc(60px);
 // $topbar-margin-bottom: emCalc(30px);
 
 // Control Input height for top bar

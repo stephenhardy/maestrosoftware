@@ -9,6 +9,8 @@
 */
 
 #main {
+	padding-top: emCalc(120px); // takes the top bar into consideration
+	padding-bottom: emCalc(60px);
 /*	-moz-background-size: auto;
 	-webkit-background-size: auto;
 	background-size: auto;
