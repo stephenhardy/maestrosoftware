@@ -1,4 +1,4 @@
 maestrosoftware
 ===============
 
-Public website for my freelance company
+Public website for my freelance company.
