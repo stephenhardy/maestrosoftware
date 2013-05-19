@@ -1,0 +1,77 @@
+// This is a peek behind the curtain at @zaarly's epic-fantasy-heavy-metal-themed internal styleguide, better known as Hammer.
+//
+// With this, you can add the .fancy class to a symbolset span inside of a heading tag to add a nice circular background. 
+// Some adjustments to the positioning of a particular glyph may be necessary. 
+// Each :before is set to postion: relative, so fine-tuning a .fancy glyph is simple, and won't affect the position of the circle.
+//
+// Example markup (in HAML):
+// %h1
+//   %span.ss-check.fancy
+//   Cool Guy Settings™ saved!
+// %h2
+//   %span.ss-creditcard.fancy.warning
+//   We have no idea how to pay you!
+//
+// See screenshot in comments for an example of how it looks.
+
+@import "compass/css3/border-radius";
+ 
+// The mixin! The default colors are a pleasant green shade.
+@mixin fancy-symbol($bg_top: #95eea2, $bg_bottom: #2fca34, $border: #53a956, $text_shadow: #67b973) {
+  display: inline-block;
+  margin-right: 5px;
+  padding: 8px;
+  line-height: 1;
+  border: 1px solid $border;
+  color: #fff;
+  text-shadow: 0 0 2px $text_shadow, 0 0 2px $text_shadow, 0 0 1px $text_shadow, 0 0 1px $text_shadow, 0 0 1px $text_shadow;
+  @include border-radius(100px);
+  //@include background(linear-gradient(top, $bg_top, $bg_bottom), $bg_top);
+}
+ 
+// Fancy versions with the circle behind it
+[class^="ss-"].fancy,
+[class*=" ss-"].fancy,
+.ss-icon.fancy {
+  @include fancy-symbol();
+ 
+  &:before {
+    position: relative;
+    top: 1px;
+    margin: 1px;
+  }
+ 
+  // colors
+  &.error {
+    @include fancy-symbol(#f78181, #e32929, #ba2421, #b53e3e);
+  }
+ 
+  &.warning {
+    @include fancy-symbol(#f7ed81, #e3c527, #e1c629, #ddc439);
+  }
+}
+ 
+// A few tweaks for larger font-size headings
+// Our h1 and h2 font-sizes are 48px and 36px, respectively.
+h1, h2 {
+  [class^="ss-"].fancy,
+  [class*=" ss-"].fancy,
+  .ss-icon.fancy {
+    padding: 8px 9px;
+ 
+    &:before {
+      top: 3px;
+    }
+ 
+    &.error, &.warning { padding: 8px 9px; }
+  }
+}
+ 
+// Just don't even show these in less than IE 9.
+.lt-ie9 {
+  [class^="ss-"].fancy,
+  [class*=" ss-"].fancy,
+  .ss-icon.fancy {
+    display: none;
+  }
+}

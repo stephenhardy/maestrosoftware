@@ -5567,35 +5567,127 @@ table tfoot tr td {
 /*
 *	Import site globals
 */
+/* line 35, ../sass/site/_mixins.scss */
+[class^="ss-"].fancy,
+[class*=" ss-"].fancy,
+.ss-icon.fancy {
+  display: inline-block;
+  margin-right: 5px;
+  padding: 8px;
+  line-height: 1;
+  border: 1px solid #53a956;
+  color: #fff;
+  text-shadow: 0 0 2px #67b973, 0 0 2px #67b973, 0 0 1px #67b973, 0 0 1px #67b973, 0 0 1px #67b973;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+  border-radius: 100px;
+}
+/* line 38, ../sass/site/_mixins.scss */
+[class^="ss-"].fancy:before,
+[class*=" ss-"].fancy:before,
+.ss-icon.fancy:before {
+  position: relative;
+  top: 1px;
+  margin: 1px;
+}
+/* line 45, ../sass/site/_mixins.scss */
+[class^="ss-"].fancy.error,
+[class*=" ss-"].fancy.error,
+.ss-icon.fancy.error {
+  display: inline-block;
+  margin-right: 5px;
+  padding: 8px;
+  line-height: 1;
+  border: 1px solid #ba2421;
+  color: #fff;
+  text-shadow: 0 0 2px #b53e3e, 0 0 2px #b53e3e, 0 0 1px #b53e3e, 0 0 1px #b53e3e, 0 0 1px #b53e3e;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+  border-radius: 100px;
+}
+/* line 49, ../sass/site/_mixins.scss */
+[class^="ss-"].fancy.warning,
+[class*=" ss-"].fancy.warning,
+.ss-icon.fancy.warning {
+  display: inline-block;
+  margin-right: 5px;
+  padding: 8px;
+  line-height: 1;
+  border: 1px solid #e1c629;
+  color: #fff;
+  text-shadow: 0 0 2px #ddc439, 0 0 2px #ddc439, 0 0 1px #ddc439, 0 0 1px #ddc439, 0 0 1px #ddc439;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+  border-radius: 100px;
+}
+
+/* line 59, ../sass/site/_mixins.scss */
+h1 [class^="ss-"].fancy,
+h1 [class*=" ss-"].fancy,
+h1 .ss-icon.fancy, h2 [class^="ss-"].fancy,
+h2 [class*=" ss-"].fancy,
+h2 .ss-icon.fancy {
+  padding: 8px 9px;
+}
+/* line 62, ../sass/site/_mixins.scss */
+h1 [class^="ss-"].fancy:before,
+h1 [class*=" ss-"].fancy:before,
+h1 .ss-icon.fancy:before, h2 [class^="ss-"].fancy:before,
+h2 [class*=" ss-"].fancy:before,
+h2 .ss-icon.fancy:before {
+  top: 3px;
+}
+/* line 66, ../sass/site/_mixins.scss */
+h1 [class^="ss-"].fancy.error, h1 [class^="ss-"].fancy.warning,
+h1 [class*=" ss-"].fancy.error,
+h1 [class*=" ss-"].fancy.warning,
+h1 .ss-icon.fancy.error,
+h1 .ss-icon.fancy.warning, h2 [class^="ss-"].fancy.error, h2 [class^="ss-"].fancy.warning,
+h2 [class*=" ss-"].fancy.error,
+h2 [class*=" ss-"].fancy.warning,
+h2 .ss-icon.fancy.error,
+h2 .ss-icon.fancy.warning {
+  padding: 8px 9px;
+}
+
+/* line 74, ../sass/site/_mixins.scss */
+.lt-ie9 [class^="ss-"].fancy,
+.lt-ie9 [class*=" ss-"].fancy,
+.lt-ie9 .ss-icon.fancy {
+  display: none;
+}
+
 /*
 *	Custom site style
 */
-/* line 11, ../sass/site/site.scss */
+/* line 12, ../sass/site/site.scss */
 #main {
   padding-top: 7.5em;
   padding-bottom: 3.75em;
-  /*	-moz-background-size: auto;
-  	-webkit-background-size: auto;
-  	background-size: auto;
-  	background: url(http://www.bhmpics.com/wallpapers/london_skyline-1920x1080.jpg) no-repeat center center #fff;*/
   background: url(../assets/images/bigstock-Abstract-Blue-Background-44606053.jpg) no-repeat center center white;
   background-color: #D6EAF8;
   color: #333333;
   font-family: 'Lato', sans-serif;
 }
 
-/* line 28, ../sass/site/site.scss */
+/* line 25, ../sass/site/site.scss */
 footer {
   background-color: #34495e;
   color: #333333;
 }
 
-/* line 33, ../sass/site/site.scss */
+/* line 30, ../sass/site/site.scss */
 .icon-wrapper {
   font-size: 60px;
 }
 
-/* line 38, ../sass/site/site.scss */
+/* line 35, ../sass/site/site.scss */
 section h3 {
   padding: 1em;
   font-style: italic;
